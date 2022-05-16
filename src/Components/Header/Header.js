@@ -12,7 +12,7 @@ export default function Header() {
                 <h3 className="logo">Ashion</h3>
             </div>
             <div className="filter">
-                <Filter />
+                <Filter first="HOME" second="WOMEN'S"  third="MEN'S" four="SHOP" five="PAGES" six="BLOG" seven="CONTACT"/>
             </div>
             <div className="login_section">
                 <p className="login_register">Login/Register</p>

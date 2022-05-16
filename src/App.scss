@@ -1,0 +1,10 @@
+.App{
+    display: flex;
+    flex-direction: column; 
+      
+    .product_display{
+        width: 100%;
+        margin-top: 3rem;
+        padding: 0 10rem;
+    }
+}

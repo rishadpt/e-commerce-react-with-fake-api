@@ -12,11 +12,11 @@ export default function CategoryDisplay() {
 
             <div className="row">
                 <SubContainer image="/images/Cards/mens.png" title="Men's fashion" bg="#bce3d6" />
-                <SubContainer image="/images/Cards/mens.png" title="Cosmetics" bg="#fcdbe6" />
+                <SubContainer image="/images/Cards/cosmetics.png" title="Cosmetics" bg="#fcdbe6" />
             </div>
             <div className="row">
                 <SubContainer image="/images/Cards/kids.png" title="kid's fashion" bg="#d8d3f1" />
-                <SubContainer image="/images/Cards/mens.png" title="Accessories" bg="#cee1f5" />
+                <SubContainer image="/images/Cards/accessories.png" title="Accessories" bg="#cee1f5" />
             </div>
         </div>
     )

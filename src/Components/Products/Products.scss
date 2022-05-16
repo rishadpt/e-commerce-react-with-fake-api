@@ -1,0 +1,25 @@
+@import '/src/sass/variables';
+
+.product_container{
+
+    h3{
+        font-weight: 900;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        font-family: $card;
+    }
+    span{
+        text-decoration: underline;
+        text-decoration-color: #cb1f1e;
+    }
+    .products_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+    .Prow1{
+        display: flex;
+        gap: 2rem;
+    }
+}

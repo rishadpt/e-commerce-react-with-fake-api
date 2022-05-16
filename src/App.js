@@ -1,6 +1,7 @@
 import CategoryDisplay from "./Components/CategoryDisplay/CategoryDisplay";
 import Header from "./Components/Header/Header";
-
+import Products from "./Components/Products/Products";
+import './App.scss';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
         height: '4.3rem'
       }} />
       <CategoryDisplay/>
+      <div className="product_display">
+        <Products/>
+      </div>
     </div>
   );
 }
