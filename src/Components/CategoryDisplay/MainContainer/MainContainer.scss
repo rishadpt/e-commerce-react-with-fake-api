@@ -1,0 +1,43 @@
+@import '/src/sass/variables';
+
+.main_card_container {
+    background-color: #fae3d8;
+    height: 35rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+    position: relative;
+
+    .card_title_container{
+        z-index: 2;
+    }
+    .main_card_title {
+        font-family: $logo;
+        font-size: 3rem;
+      
+    }
+
+    small {
+        margin-bottom: 1rem;
+        color:#8d8783;
+    }
+
+    p {
+        border-bottom: 1px solid #cb1f1e;
+        border-width: 2px;
+        width: 6rem;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        font-weight: 800;
+    }
+
+    img {
+        object-fit: cover;
+        object-position: right;
+        margin-right: -2rem;
+        height: 100%;
+        position: absolute;
+        right: 27px;
+    }
+}

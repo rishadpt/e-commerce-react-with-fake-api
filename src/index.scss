@@ -1,0 +1,23 @@
+@import '/src/sass/variables';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  width: 100vw;
+  overflow-x: hidden
+}
+body {
+  font-family: $Mainfont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (max-width : 800px){
+  html{
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}

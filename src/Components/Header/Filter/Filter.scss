@@ -1,0 +1,14 @@
+.filter_container {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    p {
+        color: #3e3e3e;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+   .selected{
+       border-bottom: 1px solid #cb1f1e;
+       border-width: 2px;
+   }
+}
