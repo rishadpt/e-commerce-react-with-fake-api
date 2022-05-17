@@ -2,13 +2,36 @@
     display: flex;
     gap: 1rem;
     cursor: pointer;
-    p {
+
+    a {
+        position: relative;
         color: #3e3e3e;
         font-size: 0.7rem;
         font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        &::after{
+            content: '';
+            background: #cb1f1e;
+            width:0;
+            height: 3px;
+            position:absolute;
+            bottom:-5px;
+            left:0;
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover{
+            &::after{
+                width:100%;
+            }
+        }
     }
-   .selected{
-       border-bottom: 1px solid #cb1f1e;
-       border-width: 2px;
-   }
+
+    .selected{
+        &::after{
+            content: '';
+            width:100%;
+        }
+    }
+    
 }

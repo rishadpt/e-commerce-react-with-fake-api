@@ -8,6 +8,11 @@
     padding-left: 2rem;
     align-items: center;
     position:relative;
+    overflow:hidden;
+    
+    &:hover img{
+        transform: translate(5px,5px);
+    }
 
     h3{
         margin-bottom: 0.5rem;
@@ -31,6 +36,8 @@
         right: 1px;
         top: -1px;
         height: 100%;
+        transition: all 0.3s ease-in-out;
+        
     }
 
 }

@@ -2,17 +2,17 @@ import React from 'react'
 import './ProductCard.scss'
 import {AiFillStar} from 'react-icons/ai'
 
-export default function ProductCard() {
+export default function ProductCard({name,price,label,img,lbg}) {
   return (
     <div className="product_card_container">
         <div className="image_container">
-            <div style={{ background:'#35a300'}} className="label_container">
-                <small>New</small>
+            <div style={{ background:`${lbg}`}} className="label_container">
+                <small>{label}</small>
                 </div>
-            <img src="/images/Cards/womens.png" alt="" />
+            <img src={img} alt="" />
         </div>
         <div className="pname">
-        <small>Button bleeved dd</small>
+        <small>{name}</small>
         <div className="star_container">
             <AiFillStar/>
             <AiFillStar/>
@@ -20,7 +20,7 @@ export default function ProductCard() {
             <AiFillStar/>
             <AiFillStar/>
         </div>
-        <small className="price">$ 80.0</small>
+        <small className="price">$ {price}</small>
         </div>
     
     </div>
