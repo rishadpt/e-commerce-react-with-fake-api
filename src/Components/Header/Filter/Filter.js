@@ -1,25 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Filter.scss'
 
-export default function Filter({ links,action }) {
+export default function Filter({links}) {
+const [selected,setSelected] = useState(links[0].name)
 
-const handleSelect = (event)=>{
-    action()
-    const active = document.querySelector('.selected')
-    console.log(active, 'active')
-    if(active){
-        active.classList.remove('selected')
-        event.target.classList.add('selected')
-    }
-    else {
-        event.target.classList.add('selected')
-    }
-}
+
+
     return (
         <div className="filter_container">
-            {links && links.map((item, index) => (
-                <Link to={`/${item.name}`} onClick={handleSelect} key={index}>{item.name}</Link>))}
+        {links && links.map((items,index)=>(
+                <Link className={selected ===  items.name ? 'selected' : 'null'  } to={`${(links.link === '' )? items.link :''}`} onClick={()=>{items.action();setSelected(`${items.name}`)}} >{items.name}</Link>))}
         </div>
     )
 }

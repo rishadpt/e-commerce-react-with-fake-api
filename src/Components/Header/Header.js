@@ -10,25 +10,48 @@ export default function Header() {
     const links = [
         {
             name: 'home',
+            action: () => {
+                console.log('home')
+            },
+            type: 'navbar'
 
         },
         {
-            name: 'women\'s'
+            name: 'women\'s',
+            action: () => {
+                console.log('women\'s')
+            }
         },
         {
-            name: 'men\'s'
+            name: 'men\'s',
+            action: () => {
+                console.log('Men\'s')
+            }
         },
         {
-            name: 'shop'
+            name: 'shop',
+            action: () => {
+                console.log('Shop')
+            }
         },
         {
-            name: 'pages'
+            name: 'pages',
+            action: () => {
+                console.log('Pages')
+            }
+
         },
         {
-            name: 'blog'
+            name: 'blog',
+            action: () => {
+                console.log('Blog')
+            }
         },
         {
-            name: 'contact'
+            name: 'contact',
+            action: () => {
+                console.log('Contact')
+            }
         }
 
     ]
