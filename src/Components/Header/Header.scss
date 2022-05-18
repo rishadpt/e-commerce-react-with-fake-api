@@ -11,6 +11,7 @@
     position: fixed;
     width: 100%;
     z-index: 100;
+
     .logo {
         font-family: $logo;
         font-size: 30px;
@@ -22,15 +23,30 @@
         display: flex;
         gap: 1rem;
         cursor: pointer;
+
+        svg {
+            &:hover {
+                color: rgba(139, 139, 139, 255);
+            }
+        }
+
     }
 
     .login_register {
         font-size: 0.7rem;
         color: rgba(139, 139, 139, 255);
+
+        &:hover {
+            color: #333;
+        }
     }
 
     .wishlist {
         position: relative;
+
+        &:hover {
+            color: rgba(139, 139, 139, 255);
+        }
     }
 
     .count {
@@ -53,5 +69,10 @@
 
     .cart {
         position: relative;
+
+
+        &:hover {
+            color: rgba(139, 139, 139, 255);
+        }
     }
 }
