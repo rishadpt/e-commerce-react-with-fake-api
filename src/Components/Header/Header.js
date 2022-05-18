@@ -13,7 +13,6 @@ export default function Header() {
             action: () => {
                 console.log('home')
             },
-            type: 'navbar'
 
         },
         {
