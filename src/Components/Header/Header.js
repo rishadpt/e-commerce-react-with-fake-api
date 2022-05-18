@@ -13,44 +13,51 @@ export default function Header() {
             action: () => {
                 console.log('home')
             },
+            link:''
 
         },
         {
             name: 'women\'s',
             action: () => {
                 console.log('women\'s')
-            }
+            },
+            link:''
         },
         {
             name: 'men\'s',
             action: () => {
                 console.log('Men\'s')
-            }
+            },
+            link:''
         },
         {
             name: 'shop',
             action: () => {
                 console.log('Shop')
-            }
+            },
+            link:''
         },
         {
             name: 'pages',
             action: () => {
                 console.log('Pages')
-            }
+            }, 
+            link:''
 
         },
         {
             name: 'blog',
             action: () => {
                 console.log('Blog')
-            }
+            },
+            link:''
         },
         {
             name: 'contact',
             action: () => {
                 console.log('Contact')
-            }
+            },
+            link:''
         }
 
     ]

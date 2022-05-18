@@ -10,7 +10,7 @@ const [selected,setSelected] = useState(links[0].name)
     return (
         <div className="filter_container">
         {links && links.map((items,index)=>(
-                <Link className={selected ===  items.name ? 'selected' : 'null'  } to={`${(links.link !== '' )? items.link :''}`} onClick={()=>{items.action();setSelected(`${items.name}`)}} >{items.name}</Link>))}
+                <Link className={selected ===  items.name ? 'selected' : 'null'  } to={items.link} onClick={()=>{items.action();setSelected(`${items.name}`)}} >{items.name}</Link>))}
         </div>
     )
 }
